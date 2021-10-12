@@ -31,14 +31,16 @@ module.exports = function(valores){
             intra2++;
         }
     }
-    console.log('============================');
-    console.log(ver);
-    console.log(log_mat);
-    console.log(vis_esp);
-    console.log(kin_cor);
-    console.log(mus_rit);
-    console.log(intra);
-    console.log(intra2);
+    var datos = {
+        'Int. verval':ver,
+        'Logico-matematica':log_mat,
+        'Visual espacial':vis_esp,
+        'Kinestecia corporal':kin_cor,
+        'Musical ritmica':mus_rit,
+        'Intrapersonal':intra,
+        'Intrapersonal':intra2
+    }
+    return datos;
 }
 /*A:9 -10-17-22-30 = Int. verval
   B:5-7-15-20-25 = Int. Logico-matematica

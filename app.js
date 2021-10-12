@@ -16,8 +16,8 @@ app.get("/",function(req,res) {
 
 app.post("/cuestionairo",function(req,res) {
     //console.log(req.body);
-    calcular(req.body);
-    res.send('Data received');
+    var resul = calcular(req.body);
+    res.render("resultados",{resultado:resul})
 });
 
 app.listen(8080);
