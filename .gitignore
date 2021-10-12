@@ -1,2 +1,5 @@
 */img
 /node_modules/
+*.jpg
+*.png
+*.ttf
