@@ -1,0 +1,26 @@
+doctype html
+html(lang='en')
+  head
+    meta(charset='UTF-8')
+    meta(http-equiv='X-UA-Compatible' content='IE=edge')
+    meta(name='viewport' content='width=device-width, initial-scale=1.0')
+    link(rel="stylesheet", href="../css/app.css")
+    title Test de inteligencias multiples
+    link(rel='stylesheet' href='./public/css/normalize.css')
+    link(rel='stylesheet' href='./public/css/estilos_cuestionario.css')
+  body
+    section.contPreguntas
+      form(action='/resultadosrespuestas' method='POST')
+        -var cont = 1;
+        for linea in readcsv
+          section.pregunta
+            p=cont+'-'+linea[1]
+            div.verdadero
+              input#v(type='radio' name=cont value='v')
+              label(for="v") Verdadero
+            div.falso
+              input#f(type='radio' name=cont value='f')
+              label(for="f") Falso
+          -cont++;
+        br
+        input#enviar(type='submit' value='Enviar')
