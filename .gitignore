@@ -1,4 +1,8 @@
 */img
 /node_modules/
 *.ttf
+<<<<<<< HEAD
 *.otf
+=======
+
+>>>>>>> 5918d5c647383cab2b00f7735df984066cffff49
