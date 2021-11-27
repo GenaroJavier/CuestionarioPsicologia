@@ -19,3 +19,17 @@
 body {
     font-size: 16px;
 }
+
+.login-container {
+    width: 100vw;
+    height: 80vh;
+    background-color: blueviolet;
+}
+
+.login-container__center {
+    width: 80%;
+    height: 100%;
+    background-color: brown;
+    display: block;
+    margin: auto;
+}
