@@ -1,14 +1,13 @@
 <?php
-$mat = $_GET["msj"];
-$mat2 = $_GET["var"];
-$BD=mysqli_connect("localhost", "root", "", "blog");
-$Res=mysqli_query($BD, "select IDNoticia, TituloNoticia FROM noticia LIMIT ".$mat.",".$mat2);
-while ($Fila=mysqli_fetch_array($Res))
-{
-  echo '<div class="noticia" >
-          <p>'.$Fila['TituloNoticia'].'</p>
-          <img src="img/eliminar.svg" id="'.$Fila['IDNoticia'].'" class="img-eliminar">
-          <img src="img/editar.svg" id="'.$Fila['IDNoticia'].'" class="img-edit">
-        </div>';
+$row = 1;
+if (($handle = fopen("TestHablilidadesPensamiento1.csv", "r")) !== FALSE) {
+  while (($data = fgetcsv($handle, 1000, ",")) !== FALSE) {
+    echo '<p>'.$data[0].'-'.$data[1].'</p>
+          <input type="radio" name="'.$data[0].'" value="v">
+          <label for="'.$data[0].'">Verdadero</label>
+          <input type="radio" name="'.$data[0].'" value="f">
+          <label for="'.$data[0].'">falso</label>';
+  }
+  fclose($handle);
 }
 ?>
