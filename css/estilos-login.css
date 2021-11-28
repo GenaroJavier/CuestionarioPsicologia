@@ -20,7 +20,7 @@ body {
     font-size: 16px;
 }
 
-.signup-container {
+.signup-container, .signup-container-login {
     width: 100vw;
     height: 80vh;
     background-color: #3f3d56;
@@ -30,6 +30,18 @@ body {
     flex-wrap: wrap;
     margin-top: 10vh;
 }
+
+/*
+
+.signup-container {
+    display: none;
+}
+
+
+.signup-container-login {
+    display: none;
+}
+*/
 
 .signup-container-left {
     width: 50%;
@@ -54,6 +66,13 @@ body {
     transform: scale(.85);
 }
 
+.signup-container-login .signup-container-img img {
+    transform: scale(.65);
+}
+
+.signup-container-login h3 {
+    margin-top: 0.5em;
+}
 
 .sigup-container__center {
     width: 50%;
@@ -117,7 +136,14 @@ body {
     padding: 0 0 0 0.5rem;
 }
 
+.signup-GradoGrupo .grado option, .grupo option{
+    height: 2.3rem;
+    font-size: 1rem;
+    text-align: center;
+}
+
 .btn-enviar {
+    margin-top: 1rem;
     width: 25%;
     height: 2.3rem;
     background-color: #3f3d56;
