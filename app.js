@@ -11,13 +11,17 @@ app.set("view engine", "pug");
 
 
 app.get("/",function(req,res) {
-    res.render("indexFinal",{readcsv});
+    res.render("indexFinal");
   });
 
-app.post("/cuestionairo",function(req,res) {
+app.get("/cuestionario",function(req,res) {
     //console.log(req.body);
-    var resul = calcular(req.body);
-    res.render("resultados",{resultado:resul})
+    res.render("index1",{readcsv});
 });
 
+app.post("/resultados",function(req,res) {
+  //console.log(req.body);
+  var resul = calcular(req.body);
+  res.render("resultados",{resultado:resul})
+});
 app.listen(8080);

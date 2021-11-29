@@ -12,19 +12,21 @@
 
 <body>
 
-    <nav class="menu">
+    <div class="menu">
         <ul>
-            <li class="menu__option"><a>Inicio</a></li>
-            <li class="menu__option"><a>Características</a></li>
-            <li class="menu__option"><a>Iniciar sesión</a></li>
-            <li class="menu__option-IniSes"><a>Registrate</a></li>
+            <li>Inicio</li>
+            <li>Características</li>
+            <li>Actividades</li>
+            <li class="btn-iniSesion">Iniciar sesión</li>
         </ul>
-    </nav>
+    </div>
 
     <div class="banner">
         <article class="banner-info">
+            <div class="titulo">
                 <h2>Nuestras Inteligencias</h2>
                 <h1>MULTIPLES</h1>
+            </div>
             <span class="banner-descripcion">
                 <p>
                     La mayoría de los individuos tenemos la totalidad de las 7 inteligencias.
@@ -34,12 +36,12 @@
                 </p>
             </span>
             <span class="opciones">
+                <span class="boton">
+                    <input type="button" value="Realizar Cuestionario" onclick="window.location='/1'">
+                </span>
                 <span class="autor">
                     <img src="img/autor.jpg" alt="">
                     <p>Howard Gardner</p>
-                </span>
-                <span class="boton">
-                    <input type="button" value="Realizar Cuestionario">
                 </span>
             </span>
         </article>
@@ -48,9 +50,6 @@
             <img src="img/581.png" alt="">
         </article>
     </div>
-
-    <div class="footer">
-
-    </div>
 </body>
+
 </html>

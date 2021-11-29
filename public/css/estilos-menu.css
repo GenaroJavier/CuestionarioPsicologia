@@ -1,0 +1,35 @@
+/*Fuentes*/
+@font-face {
+    font-family: 'Karla';
+    src: url('/home/genaro-javier/Documentos/Desarrollo web/Cuestionario/fonts/Karla-Regular.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Sinkin';
+    src: url('/home/genaro-javier/Documentos/Desarrollo web/Cuestionario/fonts/SinkinSans-700Bold.otf'); 
+}
+
+* {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	box-sizing: border-box; 
+}
+
+body {
+    font-size: 16px;
+}
+
+.login-container {
+    width: 100vw;
+    height: 80vh;
+    background-color: blueviolet;
+}
+
+.login-container__center {
+    width: 80%;
+    height: 100%;
+    background-color: brown;
+    display: block;
+    margin: auto;
+}
