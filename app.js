@@ -11,12 +11,12 @@ app.set("view engine", "pug");
 
 
 app.get("/",function(req,res) {
-    res.render("indexFinal");
+    res.render("index");
   });
 
 app.get("/cuestionario",function(req,res) {
     //console.log(req.body);
-    res.render("index1",{readcsv});
+    res.render("cuestionario",{readcsv});
 });
 
 app.post("/resultados",function(req,res) {
